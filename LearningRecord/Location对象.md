@@ -1,79 +1,79 @@
-### Location reload() ·½·¨
+### Location reload() æ–¹æ³•
 ```
 
-#### ¶¨ÒåºÍÓÃ·¨
+### å®šä¹‰å’Œç”¨æ³•
 
-reload()·½·¨ÓÃÓÚË¢ÐÂµ±Ç°ÎÄµµ¡£
+reload()æ–¹æ³•ç”¨äºŽåˆ·æ–°å½“å‰æ–‡æ¡£ã€‚
 
-reload() ·½·¨ÀàËÆÓÚÄãä¯ÀÀÆ÷ÉÏµÄË¢ÐÂÒ³Ãæ°´Å¥¡£
+reload() æ–¹æ³•ç±»ä¼¼äºŽä½ æµè§ˆå™¨ä¸Šçš„åˆ·æ–°é¡µé¢æŒ‰é’®ã€‚
 
-Èç¹û°Ñ¸Ã·½·¨µÄ²ÎÊýÉèÖÃÎª true£¬ÄÇÃ´ÎÞÂÛÎÄµµµÄ×îºóÐÞ¸ÄÈÕÆÚÊÇÊ²Ã´£¬Ëü¶¼»áÈÆ¹ý»º´æ£¬´Ó·þÎñÆ÷ÉÏÖØÐÂÏÂÔØ¸ÃÎÄµµ¡£
+å¦‚æžœæŠŠè¯¥æ–¹æ³•çš„å‚æ•°è®¾ç½®ä¸º trueï¼Œé‚£ä¹ˆæ— è®ºæ–‡æ¡£çš„æœ€åŽä¿®æ”¹æ—¥æœŸæ˜¯ä»€ä¹ˆï¼Œå®ƒéƒ½ä¼šç»•è¿‡ç¼“å­˜ï¼Œä»ŽæœåŠ¡å™¨ä¸Šé‡æ–°ä¸‹è½½è¯¥æ–‡æ¡£ã€‚
 
-ÕâÓëÓÃ»§ÔÚµ¥»÷ä¯ÀÀÆ÷µÄË¢ÐÂ°´Å¥Ê±°´×¡ Shift ½¡µÄÐ§¹ûÊÇÍêÈ«Ò»Ñù¡£
+è¿™ä¸Žç”¨æˆ·åœ¨å•å‡»æµè§ˆå™¨çš„åˆ·æ–°æŒ‰é’®æ—¶æŒ‰ä½ Shift å¥çš„æ•ˆæžœæ˜¯å®Œå…¨ä¸€æ ·ã€‚
 
-//¿ÉÑ¡¡£Èç¹û°Ñ¸Ã·½·¨µÄ²ÎÊýÉèÖÃÎª true£¬ÄÇÃ´ÎÞÂÛÎÄµµµÄ×îºóÐÞ¸ÄÈÕÆÚÊÇÊ²Ã´£¬Ëü¶¼»áÈÆ¹ý»º´æ£¬´Ó·þÎñÆ÷ÉÏÖØÐÂÏÂÔØ¸ÃÎÄµµ¡£
+//å¯é€‰ã€‚å¦‚æžœæŠŠè¯¥æ–¹æ³•çš„å‚æ•°è®¾ç½®ä¸º trueï¼Œé‚£ä¹ˆæ— è®ºæ–‡æ¡£çš„æœ€åŽä¿®æ”¹æ—¥æœŸæ˜¯ä»€ä¹ˆï¼Œå®ƒéƒ½ä¼šç»•è¿‡ç¼“å­˜ï¼Œä»ŽæœåŠ¡å™¨ä¸Šé‡æ–°ä¸‹è½½è¯¥æ–‡æ¡£ã€‚
 
-Óï·¨£ºlocation.reload(forceGet)
+è¯­æ³•ï¼šlocation.reload(forceGet)
 ```
 
 
-### Location search ÊôÐÔ
+### Location search å±žæ€§
 ```
-¼ÙÉèµ±Ç°µÄURL¾ÍÊÇhttp://www.runoob.com/submit.htm?email=someone@ example.com
+å‡è®¾å½“å‰çš„URLå°±æ˜¯http://www.runoob.com/submit.htm?email=someone@ example.com
 
-//search ÊôÐÔÊÇÒ»¸ö¿É¶Á¿ÉÐ´µÄ×Ö·û´®£¬¿ÉÉèÖÃ»ò·µ»Øµ±Ç° URL µÄ²éÑ¯²¿·Ö£¨ÎÊºÅ ? Ö®ºóµÄ²¿·Ö£©¡£
+//search å±žæ€§æ˜¯ä¸€ä¸ªå¯è¯»å¯å†™çš„å­—ç¬¦ä¸²ï¼Œå¯è®¾ç½®æˆ–è¿”å›žå½“å‰ URL çš„æŸ¥è¯¢éƒ¨åˆ†ï¼ˆé—®å· ? ä¹‹åŽçš„éƒ¨åˆ†ï¼‰ã€‚
 
 document.write(location.search);
 
-Êä³ö½á¹û: ?email=someone@example.com
+è¾“å‡ºç»“æžœ: ?email=someone@example.com
 ```
-### Location hash ÊôÐÔ
+### Location hash å±žæ€§
 ```
-¼ÙÉèµ±Ç°µÄURLÊÇhttp://www.w3cschool.cc/test.htm££PART2
+å‡è®¾å½“å‰çš„URLæ˜¯http://www.w3cschool.cc/test.htmï¼ƒPART2
 
-//hash ÊôÐÔÊÇÒ»¸ö¿É¶Á¿ÉÐ´µÄ×Ö·û´®£¬¸Ã×Ö·û´®ÊÇ URL µÄÃª²¿·Ö£¨´Ó # ºÅ¿ªÊ¼µÄ²¿·Ö£©¡£
+//hash å±žæ€§æ˜¯ä¸€ä¸ªå¯è¯»å¯å†™çš„å­—ç¬¦ä¸²ï¼Œè¯¥å­—ç¬¦ä¸²æ˜¯ URL çš„é”šéƒ¨åˆ†ï¼ˆä»Ž # å·å¼€å§‹çš„éƒ¨åˆ†ï¼‰ã€‚
 
-Óï·¨:document.write(location.hash);
+è¯­æ³•:document.write(location.hash);
 
-Êä³ö½á¹û: #part2
+è¾“å‡ºç»“æžœ: #part2
 ```
-### Location hostname ÊôÐÔ
+### Location hostname å±žæ€§
 ```
-¼ÙÉèµ±Ç°µÄURLÊÇhttp://www.w3cschool.com/test.htm££PART2
+å‡è®¾å½“å‰çš„URLæ˜¯http://www.w3cschool.com/test.htmï¼ƒPART2
 
-//hostname ÊôÐÔÊÇÒ»¸ö¿É¶Á¿ÉÐ´µÄ×Ö·û´®£¬¿ÉÉèÖÃ»ò·µ»Øµ±Ç° URL µÄÖ÷»úÃû¡£
+//hostname å±žæ€§æ˜¯ä¸€ä¸ªå¯è¯»å¯å†™çš„å­—ç¬¦ä¸²ï¼Œå¯è®¾ç½®æˆ–è¿”å›žå½“å‰ URL çš„ä¸»æœºåã€‚
 
-Óï·¨:document.write(location.hostname);
+è¯­æ³•:document.write(location.hostname);
 
-Êä³ö½á¹û: www.w3cschool.com
+è¾“å‡ºç»“æžœ: www.w3cschool.com
 ```
-### Location href ÊôÐÔ
+### Location href å±žæ€§
 ```
-¼ÙÉèµ±Ç°µÄURLÊÇhttp://www.w3cschool.cc/test.htm££PART2
+å‡è®¾å½“å‰çš„URLæ˜¯http://www.w3cschool.cc/test.htmï¼ƒPART2
 
-//href ÊôÐÔÊÇÒ»¸ö¿É¶Á¿ÉÐ´µÄ×Ö·û´®£¬¿ÉÉèÖÃ»ò·µ»Øµ±Ç°ÏÔÊ¾µÄÎÄµµµÄÍêÕû URL¡£
+//href å±žæ€§æ˜¯ä¸€ä¸ªå¯è¯»å¯å†™çš„å­—ç¬¦ä¸²ï¼Œå¯è®¾ç½®æˆ–è¿”å›žå½“å‰æ˜¾ç¤ºçš„æ–‡æ¡£çš„å®Œæ•´ URLã€‚
 
-Óï·¨:document.write(location.href);
+è¯­æ³•:document.write(location.href);
 
-Êä³ö½á¹û: http://www.w3cschool.cc/test.htm££PART2
+è¾“å‡ºç»“æžœ: http://www.w3cschool.cc/test.htmï¼ƒPART2
 ```
-### Location pathname ÊôÐÔ
+### Location pathname å±žæ€§
 ```
-¼ÙÉèµ±Ç°µÄURLÊÇhttp://www.runoob.com/jsref/prop-loc-pathname.html
+å‡è®¾å½“å‰çš„URLæ˜¯http://www.runoob.com/jsref/prop-loc-pathname.html
 
-//pathname ÊôÐÔÊÇÒ»¸ö¿É¶Á¿ÉÐ´µÄ×Ö·û´®£¬¿ÉÉèÖÃ»ò·µ»Øµ±Ç° URL µÄÂ·¾¶²¿·Ö¡£
+//pathname å±žæ€§æ˜¯ä¸€ä¸ªå¯è¯»å¯å†™çš„å­—ç¬¦ä¸²ï¼Œå¯è®¾ç½®æˆ–è¿”å›žå½“å‰ URL çš„è·¯å¾„éƒ¨åˆ†ã€‚
 
-Óï·¨:document.write(location.pathname);
+è¯­æ³•:document.write(location.pathname);
 
-Êä³ö½á¹û: /jsref/prop-loc-pathname.html
+è¾“å‡ºç»“æžœ: /jsref/prop-loc-pathname.html
 ```
-### Location protocol ÊôÐÔ
+### Location protocol å±žæ€§
 ```
-¼ÙÉèµ±Ç°µÄURLÊÇhttp://www.runoob.com/jsref/prop-loc-pathname.html
+å‡è®¾å½“å‰çš„URLæ˜¯http://www.runoob.com/jsref/prop-loc-pathname.html
 
-//protocol ÊôÐÔÊÇÒ»¸ö¿É¶Á¿ÉÐ´µÄ×Ö·û´®£¬¿ÉÉèÖÃ»ò·µ»Øµ±Ç° URL µÄÐ­Òé¡£
+//protocol å±žæ€§æ˜¯ä¸€ä¸ªå¯è¯»å¯å†™çš„å­—ç¬¦ä¸²ï¼Œå¯è®¾ç½®æˆ–è¿”å›žå½“å‰ URL çš„åè®®ã€‚
 
-Óï·¨:document.write(location.protocol);
+è¯­æ³•:document.write(location.protocol);
 
-Êä³ö½á¹û: http:
+è¾“å‡ºç»“æžœ: http:
 ```

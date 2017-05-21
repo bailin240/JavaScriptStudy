@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="dome">
+</body>
+</html>
+<script type="text/javascript">
+    var odj = window.document.getElementById('dome');
+    function LimitNumber(obj,number) {
+        obj.onkeydown=function (e) {
+            var oEvent = e || event;
+            var num = number || Infinity;
+            if(oEvent.keyCode != 9 && oEvent.keyCode!=8 && oEvent.keyCode!=46 && oEvent.keyCode!=37 && oEvent.keyCode!=39 && oEvent.keyCode<48 || oEvent.keyCode>57 && oEvent.keyCode<96 || oEvent.keyCode>105 && oEvent.keyCode != 123 && oEvent.keyCode != 116)
+            {
+                //先判断是否按键为数字键、Tab键、删除键、左右方向键、H5刷新 如斗不是有则不记录当次输入 如果是则走下一步判断
+                return false;
+            }else if(oEvent.keyCode == 8 || oEvent.keyCode == 9 ||oEvent.keyCode == 37 || oEvent.keyCode == 39 || oEvent.keyCode == 46 || oEvent.keyCode == 123 || oEvent.keyCode == 116)
+            {
+                //下一步判断 是为按键为Tab键、F5刷新、删除、退格、左右方向 如是则执行该次操作
+                return true;
+
+            }else if(obj.value.length >= num)
+            {
+                //最后判断传入限制length 如果大于传入number则不执行该次操作
+                //把判断限制length 放在最后是应该如果放在前面 如果大于length
+                // 之后斗不会执行 应因大于length 之后就返回false 了 用户就不能再继续操作
+                //但是用户可能会做刷新操作 输入错误需要修改 所以把限制放最后方便修改刷新
+                return false;
+            }
+            //如果条件斗不满足
+            return true;
+        }
+    }
+    LimitNumber(odj,5)
+</script>

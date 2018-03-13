@@ -13,7 +13,7 @@
 8. [Document节点](https://github.com/bailin240/JavaScriptStudy/blob/master/LearningRecord/Document%E8%8A%82%E7%82%B9.md)
 
 ### 自定义一些小函数
-1. [限制输入个数的Input框且只能输入数字的input框](https://github.com/bailin240/JavaScriptStudy/tree/master/LearningFunction)
-1. [颜色转换16进制转RGB和RGB转16进制](https://github.com/bailin240/JavaScriptStudy/tree/master/ColorConversion)
+1. [限制输入个数的Input框且只能输入数字的input框](https://github.com/bailin240/JavaScriptStudy/blob/master/LearningFunction/LimitNumber.html)
+1. [颜色转换16进制转RGB和RGB转16进制](https://github.com/bailin240/JavaScriptStudy/blob/master/LearningFunction/ColorConversion.html)
 
 

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>颜色转换</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // 16进制转RGB
+    function getRGB(str) {
+        var reg = /^#([0-9a-fA-f]{3}|[0-9a-fA-f]{6})$/, // 16进制颜色正则
+            color = str.toLowerCase(), // 字母转换小写
+            array = []
+        // 判断参数是否正确
+        if (str && reg.test(str)) {
+            // 如只有4位 比如 ： #333 #265
+            if (str.length === 4) {
+                var colorNew = '#'
+                // 自动补全位数
+                for (var i = 1; i < str.length; i++) {
+                   colorNew += str.slice(i,i+1).concat(str.slice(i,i+1))
+                }
+                color = colorNew
+            }
+            // 利用 内建函数 parseInt() 转换成
+            for (var i = 1; i < color.length; i+=2) {
+                array.push(parseInt(color.slice(i,i+2),16))
+            }
+            // 反回转换后的值
+            return 'RGB(' + array.join(',')+')'
+        } else {
+            console.error('输入正确值')
+        }
+    };
+   console.log(getRGB('#666'))
+
+    // RBG转16进制
+    function getColor(str) {
+        var reg = /^(?:rgb|RGB)\(|\)/g  // 正则替换多余东西
+        var data = str.replace(reg, '').split(',') // 分割
+        var colorNew = '#'
+        // 利用 内建函数 parseInt() 转换
+        for (let i = 0; i < data.length; i++) {
+            colorNew += parseInt(data[i]).toString(16) == 0 ? parseInt(data[i]).toString(16) + '0' : parseInt(data[i]).toString(16)
+        }
+        return colorNew
+    }
+  console.log(getColor('rgb(0,0,255)'))
+</script>

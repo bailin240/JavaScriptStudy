@@ -14,5 +14,6 @@
 
 ### 自定义一些小函数
 1. [限制输入个数的Input框且只能输入数字的input框](https://github.com/bailin240/JavaScriptStudy/tree/master/LearningFunction)
+1. [颜色转换16进制转RGB和RGB转16进制](https://github.com/bailin240/JavaScriptStudy/tree/master/LearningFunction)
 
 
